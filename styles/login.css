@@ -1,0 +1,24 @@
+.wrapper { 
+    width: 30vw;
+    padding: 3vw;
+    margin: 0 auto;
+}
+
+body {
+    position: relative;
+    padding: 20px;
+
+    font-size: 2vh;
+    
+    font-family: 'Libre Baskerville', serif;
+    background-color: white;
+}
+
+
+#login-form {
+    background-color: white;
+    border: 0.15vw solid darkcyan;
+    box-sizing: border-box;
+    border-radius: 1vw;
+    padding: 1vw;
+}
