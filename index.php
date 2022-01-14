@@ -16,6 +16,7 @@
         <meta charset="UTF-8">
         <title>Penis</title>
         <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" href="styles/general.css">
     </head>
     <body>
         <?php echo $header; ?>
