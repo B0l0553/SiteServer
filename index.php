@@ -5,9 +5,7 @@
         header("location: login.php");
         exit;
     }
-    require_once "api/index.php";
-    
-    
+    require_once "api/SiteComponents/index.php";
 ?>
 
 <!DOCTYPE html>

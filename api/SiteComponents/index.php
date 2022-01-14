@@ -13,4 +13,9 @@ $header = "<header class='navigation-bar'>
         </div>
     </div>
 </header>";
+
+$footer =
+'<footer>
+    <div id="footer-content">@Copyrights B0l0553TM</div>
+</footer>';
 ?>
