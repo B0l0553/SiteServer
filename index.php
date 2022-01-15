@@ -17,8 +17,12 @@
         <link rel="stylesheet" href="styles/general.css">
     </head>
     <body>
-        <?php echo $header; ?>
-        
-        <?php echo $footer; ?>
+        <div id="app">
+            <?php echo $header; ?>
+            <div>
+
+            </div>
+            <?php echo $footer; ?>
+        </div>
     </body>
 </html>
