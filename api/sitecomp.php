@@ -1,14 +1,14 @@
 <?php
 $header = "<header class='navigation-bar'>
     <a href='/'>
-        <img class='title' src='/resources/imgs/logo.webp' />
+        <img class='title' src='/resources/site/imgs/logo.webp' />
     </a>
     <div class='right' style='margin-right: 1vw'>
         <div id='user-dropdown'>
             <img id='pfp' src='".$_SESSION['pfp']."' /><p id='username'>".$_SESSION['username']."</p>
             <div id='dropdown-content'>
                 <a href='/profile/'>Profile</a>
-                <a href='logout.php'>Logout</a>
+                <a href='/logout.php'>Logout</a>
             </div>
         </div>
     </div>

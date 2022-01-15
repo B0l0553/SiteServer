@@ -8,7 +8,7 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
 }
  
 // SQL
-require_once "api/MySQL/index.php";
+require_once "api/config.php";
  
 // Predefinition
 $username = $password = $pfp ="";

@@ -2,8 +2,8 @@
     // Initialize the session
     session_start();
     
-    require_once "../api/MySQL/index.php";
-    require_once "../api/SiteComponents/index.php";
+    require_once "../api/config.php";
+    require_once "../api/sitecomp.php";
     // Check if user -> login != redirect -> login 
     if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         header("location: login.php");
@@ -21,7 +21,7 @@
         <meta charset="UTF-8">
         <title>Profile</title>
         <link rel="stylesheet" href="/styles/general.css">
-        <link rel="stylesheet" href="/styles/profile.css">
+        <link rel="stylesheet" href="styles/profile.css">
         <link rel="icon" href="favicon.ico">
     </head>
     <body>
