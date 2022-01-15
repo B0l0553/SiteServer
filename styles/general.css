@@ -78,7 +78,9 @@ a:hover {
 }
 
 #pfp {
-    height: 6vh;
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    height: 5vh;
     position: relative;
     top: -0.33333vh;
     right: 1vw;

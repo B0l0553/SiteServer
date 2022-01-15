@@ -21,7 +21,7 @@
         <meta charset="UTF-8">
         <title>Profile</title>
         <link rel="stylesheet" href="/styles/general.css">
-        <link rel="stylesheet" href="styles/profile.css">
+        <link rel="stylesheet" href="/styles/profile.css">
         <link rel="icon" href="favicon.ico">
     </head>
     <body>

@@ -12,7 +12,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Penis</title>
+        <title>Main Board</title>
         <link rel="icon" href="favicon.ico">
         <link rel="stylesheet" href="styles/general.css">
     </head>
