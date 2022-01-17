@@ -4,7 +4,7 @@
 }
 
 .profile {
-    background-color: rgb(82, 78, 78);
+    background-color: rgb(17, 17, 17);
     border-style: solid none none none;
     border-width: 0.5vw;
     border-color:lawngreen;
@@ -32,5 +32,5 @@
 }
 
 #pfp-click {
-    background-color: rgb(82, 78, 78);
+    background-color: rgb(17, 17, 17);
 }

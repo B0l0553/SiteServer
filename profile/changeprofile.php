@@ -20,13 +20,13 @@ if(isset($_POST['submit'])){
             $newFilePath = "../resources/users/" . $filename;
             
             if(move_uploaded_file($tmpFilePath, $newFilePath)) {
-                $sqlImageRequest = mysqli_query($link, sprintf("SELECT profile_picture FROM users WHERE id = %d", $_SESSION["id"])) or die (mysqli_error($link));
+                $sqlImageRequest = mysqli_query($link, sprintf("SELECT avatar FROM users WHERE id = %d", $_SESSION["id"])) or die (mysqli_error($link));
                 if ($value = mysqli_fetch_assoc($sqlImageRequest)) {
-                    unlink($value["profile_picture"]);
+                    unlink($value["avatar"]);
                 }
                 mysqli_free_result($sqlImageRequest);
                 $_SESSION["pfp"] = $newFilePath;
-                $sqlImageUpdateRequest = mysqli_query($link, sprintf("UPDATE users SET profile_picture = '%s' WHERE id = %d", mysqli_real_escape_string($link, $newFilePath), $_SESSION["id"])) or die (mysqli_error($link));
+                $sqlImageUpdateRequest = mysqli_query($link, sprintf("UPDATE users SET avatar = '%s' WHERE id = %d", mysqli_real_escape_string($link, $newFilePath), $_SESSION["id"])) or die (mysqli_error($link));
             }
         }
     }

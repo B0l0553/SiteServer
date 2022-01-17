@@ -40,19 +40,19 @@
                 <div class="profile">
                     <div class="profile-container">
                         <?php
-                            $sqlUserRequest = mysqli_query($link, sprintf("SELECT id, username, profile_picture, created_at FROM users WHERE id = %d;", $_GET["id"])) or die (mysqli_error($link));
+                            $sqlUserRequest = mysqli_query($link, sprintf("SELECT id, username, avatar, created_at FROM users WHERE id = %d;", $_GET["id"])) or die (mysqli_error($link));
                             if ($userValues = mysqli_fetch_assoc($sqlUserRequest)) {
                                 echo sprintf("
                                 <div id='pfp-border'>
-                                    <a id='pfp-click' href='#'>
-                                        <img id='pfp-profile' src='%s'/>
+                                    <a id='pfp-click' title='Click to change me!' href='#'>
+                                        <img id='pfp-profile' src='%s' onerror=\"this.onerror=null;this.src='/resources/site/imgs/dirt.jpg';\" />
                                     </a>
                                 </div>
                                 <div id='user-info'>
                                     <h1>%s</h1>
                                     <p>Compte créé le %s</p>
                                 
-                                ", htmlspecialchars($userValues["profile_picture"]),
+                                ", htmlspecialchars($userValues["avatar"]),
                                 htmlspecialchars($userValues["username"]),
                                 intval(date("Y"))-intval(date("Y", strtotime($userValues["birthdate"]))),
                                 date("j M. Y", strtotime($userValues["created_at"])));

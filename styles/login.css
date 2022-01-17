@@ -1,23 +1,37 @@
 .wrapper { 
     width: 30vw;
-    padding: 3vw;
+    padding: 2.5vw;
+    padding-top: 10vw;
     margin: 0 auto;
 }
 
 body {
-    position: relative;
-    padding: 20px;
-
-    font-size: 2vh;
-    
-    font-family: 'Libre Baskerville', serif;
-    background-color: white;
+    font-family: 'Libre Baskerville', sans-serif;
+    background-color: black;
+    overflow: hidden;
+    image-rendering: optimizeSpeed;
+    background-image: url(/resources/site/imgs/neko.jpg);
 }
 
+input {
+    max-width: 15vw;
+}
+
+@media screen and (orientation: portrait) {
+    .wrapper {
+        width: 100vw;
+        padding: 2.5vw;
+        margin: 0 auto;
+    }
+
+    input {
+        max-width: 50vw;
+    }
+}
 
 #login-form {
-    background-color: white;
-    border: 0.15vw solid darkcyan;
+    background-color: rgb(207, 214, 210);
+    border: 0.25vw solid rgb(12, 189, 136);
     box-sizing: border-box;
     border-radius: 1vw;
     padding: 1vw;
