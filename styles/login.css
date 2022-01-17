@@ -6,7 +6,6 @@
 }
 
 body {
-    font-family: 'Libre Baskerville', sans-serif;
     background-color: black;
     overflow: hidden;
     image-rendering: optimizeSpeed;
@@ -24,15 +23,22 @@ input {
         margin: 0 auto;
     }
 
+    #login-form{
+        text-align: center;
+    }
+
     input {
         max-width: 50vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 #login-form {
-    background-color: rgb(207, 214, 210);
-    border: 0.25vw solid rgb(12, 189, 136);
+    background-color: rgb(17, 17 ,17);
+    border: 0.25vw solid crimson;
     box-sizing: border-box;
     border-radius: 1vw;
     padding: 1vw;
+    color: white;
 }
