@@ -1,29 +1,35 @@
-.ff {
+.main-profile-wrapper {
     padding: 6vw;
-    
+    font-size: 20px;
+    margin: auto;
+    position: relative;
+    top: 6vh;
 }
 
-.profile {
+.prof {
     background-color: rgb(17, 17, 17);
     border-style: solid none none none;
-    border-width: 0.5vw;
+    border-width: 5px;
     border-color:lawngreen;
 }
 
 .profile-container {
-    margin: auto;
-    padding: 0.5vw 0.5vw 0vw 0.5vw;
+    padding: 0.5vw;
+}
+
+.wrapper {
+    width: fit-content;
 }
 
 #user-info {
     display: inline-block;
-    top:0vw;
+    top: 0vw;
     color: white;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #pfp-profile{
-    height: 256px;
+    height: 12vw;
     border-radius: 2.5vw;
 }
 
@@ -32,5 +38,29 @@
 }
 
 #pfp-click {
+    cursor: pointer;
+    border: none;
     background-color: rgb(17, 17, 17);
+}
+
+
+
+@media screen and (orientation: portrait) {
+
+    .first-wrapper{
+        width: fit-content;
+
+    }
+    .profile-container{
+        padding: 2.5vw;
+    }
+
+    #pfp-profile{
+        height: 256px;
+    }
+
+    #user-info{
+        display: block;
+
+    }
 }
