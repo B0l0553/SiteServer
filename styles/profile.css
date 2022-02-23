@@ -1,0 +1,76 @@
+.main-profile-wrapper {
+    padding: 6vw;
+    margin: auto;
+    position: relative;
+    top: 6vh;
+}
+
+.prof {
+    background-color: rgb(17, 17, 17);
+    border-style: solid none none none;
+    border-width: 5px;
+    border-color:lawngreen;
+}
+
+.profile-container {
+    padding: 0.5vw;
+}
+
+.wrapper {
+    width: fit-content;
+}
+
+#user-info {
+    font-size: 1.5vw;
+    display: inline-block;
+    top: 0vw;
+    color: white;
+    
+}
+
+#pfp-profile{
+    height: 12vw;
+    border-radius: 2.5vw;
+}
+
+#pfp-border {
+    display: inline-block;
+}
+
+#pfp-click {
+    cursor: pointer;
+    border: none;
+    background-color: rgb(17, 17, 17);
+}
+
+#me {
+    background-color: rgb(17, 17, 17);
+    border-style: solid none none none;
+    border-width: 5px;
+    border-color:lawngreen;
+}
+
+#me-container {
+    padding: 0.5vw;
+    color: white;
+}
+
+@media screen and (orientation: portrait) {
+
+    .first-wrapper{
+        width: fit-content;
+
+    }
+    .profile-container{
+        padding: 2.5vw;
+    }
+
+    #pfp-profile{
+        height: 256px;
+    }
+
+    #user-info{
+        display: block;
+
+    }
+}

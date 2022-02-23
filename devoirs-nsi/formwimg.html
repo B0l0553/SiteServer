@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form with img & table</title>
+        <meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+		<table id="app">
+			<tr>
+				<th id="form-wrapper">
+					<!-- #region Formular-->
+					<form id="formular">
+						<div id="form-title">Formulaire D'inscription</div>
+						<table>
+							<tr>
+								<th>Nom:</th>
+								<th><input name="name" type="text"></th>
+							</tr>
+							<tr>
+								<th>Prenom:</th>
+								<th><input name="name" type="text"></th>
+							</tr>
+							<tr>
+								<th>Email:</th>
+								<th><input name="name" type="email"></th>
+							</tr>
+							<tr>
+								<th>Sexe:</th>
+								<th id="radio">
+									<input type="radio" name="sex">Homme</input>
+									<input type="radio" name="sex">Femme</input>
+								</th>
+							</tr>
+							<tr>
+								<th>Photo</th>
+								<th><input name="photo" type="file" /></th>
+							</tr>
+							<tr>
+								<th>Classe:</th>
+								<th>
+									<select>
+										<option>1ere1</option>
+										<option>1ere2</option>
+										<option>1ere3</option>
+										<option>1ere4</option>
+										<option>1ere5</option>
+										<option>1ere6</option>
+										<option>1ere7</option>
+										<option>1ere8</option>
+										<option>1ere9</option>
+									</select>
+								</th>
+							</tr>
+							<tr>
+								<th>Matière choisie(s):</th>
+								<th>
+									<input type="checkbox">Sciences-Physique</input>
+									<input type="checkbox">Mathématique</input>
+									<input type="checkbox">Langues</input>
+								</th>
+							</tr>
+							<tr>
+								<th colspan="2" id="sub">
+									<input type="submit" name="submit" />
+									<input type="reset" name="reset" />
+								</th>
+							</tr>
+						</table>
+					</form>
+				</th>
+				<!-- #endregion -->
+				<th id="phys-img">
+					<img src="image.jpg" />
+				</th>
+			</tr>
+		</table>
+    </body>
+</html>
