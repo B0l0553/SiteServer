@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import MainWindow from "./mainWindow";
+import NavBar from "./NavBar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router>
+      <Home />
+      <Routes>
+        <Route exact path='/'/>
+        <Route exact path='/login' />
+        <Route exact path='/community'/>
+        <Route exact path='/gunHistory'/>
+        <Route exact path='/gitRedirect' />
+      </Routes>
+    </Router>
+  );
+}
+
+function GitRedirect() {
+  window.location.href = 'https://github.com/B0l0553/SiteServer'
+}
+
+function Home() {
+  return (
+    <div className='flex'>
+      <MainWindow />
+      <NavBar />
     </div>
   );
 }
+
 
 export default App;
