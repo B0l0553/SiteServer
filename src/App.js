@@ -11,7 +11,7 @@ function App() {
         <Route exact path='/login' />
         <Route exact path='/community'/>
         <Route exact path='/gunHistory'/>
-        <Route exact path='/gitRedirect' />
+        <Route exact path='/gitRedirect' element={<GitRedirect />} />
       </Routes>
     </Router>
   );
@@ -19,6 +19,13 @@ function App() {
 
 function GitRedirect() {
   window.location.href = 'https://github.com/B0l0553/SiteServer'
+}
+
+function Login() {
+  return (
+    <div className="login-form">
+    </div>
+  );
 }
 
 function Home() {

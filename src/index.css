@@ -11,7 +11,15 @@
 		@apply absolute w-auto p-2 m-2 text-xs font-bold text-white transition-all duration-100 origin-bottom bg-gray-900 rounded-md shadow-md min-w-max bottom-14 ;
 	}
 
+	.icon-cluster {
+		@apply absolute flex w-auto p-2 m-2 mx-4 text-xs font-bold text-white transition-all duration-500 origin-bottom bg-gray-900 rounded-none shadow-xl min-w-fit bottom-14;
+	}
+
 	.post {
 		@apply relative shadow-lg rounded-xl;
+	}
+
+	.login-form {
+		
 	}
 }

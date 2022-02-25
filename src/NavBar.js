@@ -1,7 +1,5 @@
 import { RiFoldersLine } from 'react-icons/ri';
-import { IoLogInSharp, IoLogoGithub } from 'react-icons/io5'
-import { FaUsers } from 'react-icons/fa';
-import { GiOpenFolder } from 'react-icons/gi';
+import { IoLogoGithub } from 'react-icons/io5'
 import { SylveonIconGen, GunIconGen } from './svgsLogo';
 import { isMobile } from 'react-device-detect';
 import { Link } from 'react-router-dom';
@@ -19,18 +17,22 @@ const NavBar = () => {
 			<NavBarIcon icon={ <SylveonIconGen size="2rem"/>} clink="/" text='Homepage'/>
 			{/*<NavBarIcon icon={ <FaUsers size="2rem"/>} clink="community" text='Community'/>*/}
 			<NavBarIcon icon={ <RiFoldersLine size="2rem" />} clink="files" text="Files" />
-			<NavBarIconCluster icon={ <GiOpenFolder /> } text='Miscellanous'>
-				<NavBarIcon icon={ <GunIconGen size='2rem'/>} clink="gunHistory" text="Gun History" />
-				<NavBarIcon icon={ <IoLogoGithub size='2rem'/>} clink="gitRedirect" text="Github Page" />
-			</NavBarIconCluster>
+			<NavBarIcon icon={<GunIconGen size='2rem'/>} clink='gunHistory' text='Gun History' />
+			<NavBarIcon icon={<IoLogoGithub size='2rem'/>} clink='gitRedirect' text='Github' />
 		</div>
 	);
 }
 
+/**
+ * @deprecated
+ */
 const NavBarIconCluster = (props) => {
 	return (
-		<div>
-		
+		<div className='navbar-icon group'>
+			{props.icon}
+			<div className='scale-0 icon-cluster group-hover:scale-100'>
+				{props.children}
+			</div>
 		</div>
 	);
 }
