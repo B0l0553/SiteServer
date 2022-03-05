@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer {
+
+	.minibar {
+		@apply fixed top-0 flex flex-row items-center justify-center w-screen h-10 m-0 text-white bg-gray-800 shadow;
+	}
+
 	.navbar-icon {
 		@apply relative flex items-center justify-center w-12 h-12 mx-auto mt-2 mb-2 text-white transition-all duration-200 ease-linear bg-pink-500 shadow-lg cursor-pointer rounded-xl hover:rounded-sm hover:bg-white hover:text-pink-500;
 	}
@@ -11,15 +16,11 @@
 		@apply absolute w-auto p-2 m-2 text-xs font-bold text-white transition-all duration-100 origin-bottom bg-gray-900 rounded-md shadow-md min-w-max bottom-14 ;
 	}
 
-	.icon-cluster {
-		@apply absolute flex w-auto p-2 m-2 mx-4 text-xs font-bold text-white transition-all duration-500 origin-bottom bg-gray-900 rounded-none shadow-xl min-w-fit bottom-14;
-	}
-
 	.post {
 		@apply relative shadow-lg rounded-xl;
 	}
 
-	.login-form {
-		
+	.login {
+		@apply absolute inset-x-0 grid h-64 max-w-xs p-2 mx-auto transition-all duration-500 origin-top bg-white rounded-b-lg justify-items-start top-10;
 	}
 }

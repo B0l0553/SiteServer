@@ -17,8 +17,8 @@ const NavBar = () => {
 			<NavBarIcon icon={ <SylveonIconGen size="2rem"/>} clink="/" text='Homepage'/>
 			{/*<NavBarIcon icon={ <FaUsers size="2rem"/>} clink="community" text='Community'/>*/}
 			<NavBarIcon icon={ <RiFoldersLine size="2rem" />} clink="files" text="Files" />
-			<NavBarIcon icon={<GunIconGen size='2rem'/>} clink='gunHistory' text='Gun History' />
-			<NavBarIcon icon={<IoLogoGithub size='2rem'/>} clink='gitRedirect' text='Github' />
+			<NavBarIcon icon={ <GunIconGen size='2rem'/>} clink='gunHistory' text='Gun History' />
+			<NavBarIcon icon={ <IoLogoGithub size='2rem'/>} clink='gitRedirect' text='Github' />
 		</div>
 	);
 }
