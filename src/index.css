@@ -23,4 +23,8 @@
 	.login {
 		@apply absolute inset-x-0 grid h-64 max-w-xs p-2 mx-auto transition-all duration-500 origin-top bg-white rounded-b-lg justify-items-start top-10;
 	}
+
+	.login-minibar-button {
+		@apply w-16 h-8 font-extrabold transition-all duration-300;
+	}
 }

@@ -134,6 +134,7 @@ export {
 	auth,
 	db,
 	signInWithGoogle,
+	signInWithGithub,
 	logInWithEmailAndPassword,
 	registerWithEmailAndPassword,
 	sendPasswordReset,
