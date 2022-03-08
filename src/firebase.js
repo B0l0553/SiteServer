@@ -123,9 +123,6 @@ const sendPasswordReset = async (email) => {
 	}
 };
 
-/**
- * @deprecated
- */
 const logout = () => {
 	signOut(auth);
 };

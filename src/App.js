@@ -6,15 +6,13 @@ import Login from "./Login";
 
 
 
-function App() {
-  
-  
+function App() { 
   return (
     <Router>
       <Home>
         <Routes>
-          <Route exact path='/' element={<Dashboard />}/>
-          <Route exact path='/login' /> // TODO: LOGIN
+          <Route exact path='/' element={<Dashboard />} />
+          <Route exact path='/login' element={<Login />} />
           <Route exact path='/community'/>
           <Route exact path='/gunHistory'/>
           <Route exact path='/gitRedirect' element={<GitRedirect />} />
@@ -41,13 +39,11 @@ const Home = (props) => {
   return (
     <div className='flex'>
       <MiniBar />
-      <MainWindow>
-        {props.children}
-      </MainWindow>
+        <MainWindow>
+          {props.children}
+        </MainWindow>
       <NavBar />
     </div>
   );
 }
-
-
 export default App;

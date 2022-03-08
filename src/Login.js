@@ -19,8 +19,11 @@ function Login() {
 	}, [user, loading]);
 	
 	return (
-		<div className="scale-0 group-hover:scale-100 login" id='loginModal'>
-			<div className="flex flex-col items-center justify-center mx-auto my-auto">
+		<div className=''>
+			<OAuthIcon icon={<FcGoogle size='32' />} OAuthCallback={signInWithGoogle} />
+			<OAuthIcon icon={<FaGithub size='32'/>} OAuthCallback={signInWithGithub} />
+
+			{/*<div className="flex flex-col items-center justify-center mx-auto my-auto">
 				<input
 					type="text"
 					className="m-1 border-2 border-black rounded-sm"
@@ -47,7 +50,7 @@ function Login() {
 			
 			<div className="m-2">
 				Don't have an account? <Link className='text-blue-600' to="/register">Register</Link> now.
-			</div>
+			</div>*/}
 		</div>
   );
 }
