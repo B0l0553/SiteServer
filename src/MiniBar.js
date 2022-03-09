@@ -28,29 +28,21 @@ const MiniBar = () => {
 
 	if(!user){
 		return (
-			<>
-				<div className="minibar">
-					<Link to='/login'>
-						<button className='bg-pink-500 rounded-md login-minibar-button hover:bg-white hover:text-pink-500 hover:rounded-sm'>
-							Login
-						</button>
-					</Link>
-				</div>
-			</>
+			<div className="minibar">
+				<Login />
+			</div>
 		)
 	} else {
 		return (
-			<>
-				<div className="minibar">
-					<div className="relative flex flex-row w-32 h-auto transition-all bg-pink-500 cursor-pointer group hover:bg-pink-600">
-						<img src={user?.photoURL} alt='PFP' className='object-cover w-8 h-8 m-2 rounded-full' />
-						<span className="my-auto">{name}</span>
-						<div className="absolute flex flex-col w-32 transition-all duration-500 scale-100 bg-white group-hover:scale-100 rounded-b-md top-12">
-							<button onClick={logout} className='font-extrabold text-red-600 transition-all duration-500 bg-white border-2 rounded hover:text-white hover:bg-red-600'>LOGOUT</button>
-						</div>
+			<div className="minibar">
+				<div className="relative flex flex-row w-32 h-auto transition-all bg-pink-500 cursor-pointer group hover:bg-pink-600">
+					<img src={user?.photoURL} alt='PFP' className='object-cover w-8 h-8 m-2 rounded-full' />
+					<span className="my-auto">{name}</span>
+					<div className="absolute flex flex-col w-32 transition-all duration-500 scale-100 bg-white group-hover:scale-100 rounded-b-md top-12">
+						<button onClick={logout} className='font-extrabold text-red-600 transition-all duration-500 bg-white border-2 rounded hover:text-white hover:bg-red-600'>LOGOUT</button>
 					</div>
 				</div>
-			</>
+			</div>
 		)
 	}
 	
