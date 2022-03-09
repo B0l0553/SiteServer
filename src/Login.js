@@ -19,7 +19,7 @@ function Login() {
 	}, [user, loading]);
 	
 	return (
-		<div className=''>
+		<div className='text-black bg-pink-500'>
 			<OAuthIcon icon={<FcGoogle size='32' />} OAuthCallback={signInWithGoogle} />
 			<OAuthIcon icon={<FaGithub size='32'/>} OAuthCallback={signInWithGithub} />
 
@@ -57,7 +57,7 @@ function Login() {
 
 const OAuthIcon = ({icon, OAuthCallback}) => {
 	return (
-		<button className='w-auto m-1 transition-all duration-300 border-2 border-pink-500 h-9 rounded-3xl hover:bg-pink-400 hover:border-white' onClick={OAuthCallback}>
+		<button className='items-center justify-center m-2 transition-all duration-300 bg-white rounded-full w-9 h-9 hover:bg-white hover:text-black' onClick={OAuthCallback}>
 			{icon}
 		</button>
 	)
