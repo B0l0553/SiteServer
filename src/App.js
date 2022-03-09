@@ -12,7 +12,6 @@ function App() {
       <Home>
         <Routes>
           <Route exact path='/' element={<Dashboard />} />
-          <Route exact path='/login' element={<Login />} />
           <Route exact path='/community'/>
           <Route exact path='/gunHistory'/>
           <Route exact path='/gitRedirect' element={<GitRedirect />} />
