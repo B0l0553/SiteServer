@@ -22,7 +22,7 @@ import
 	getDoc,
 } from "firebase/firestore";
 
-import firebaseConfig from '';
+import firebaseConfig from './firebase-config';
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
